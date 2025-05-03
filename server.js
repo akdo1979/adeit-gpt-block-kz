@@ -30,7 +30,7 @@ app.post("/gpt", async (req, res) => {
       ]
     });
 
-    const reply = chatCompletion.choices[0]?.message?.content || "Нет ответа.";
+    const reply = chatCompletion.choices[0]?.message?.content || "Жауап жоқ.";
     res.json({ reply });
   } catch (error) {
     console.error("Groq API error:", error.response?.data || error.message);
