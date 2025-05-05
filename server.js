@@ -77,7 +77,7 @@ app.post("/gpt", async (req, res) => {
 
   try {
     const chatCompletion = await groq.chat.completions.create({
-      model: "llama-guard-3-8b",
+      model: "allam-2-7b",
       messages: sessionHistory
     });
 
